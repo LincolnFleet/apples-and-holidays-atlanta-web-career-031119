@@ -105,7 +105,7 @@ def all_supplies_in_holidays(holiday_hash)
       end
       cap_day.map {|d| d=d.to_s.capitalize!}
       cap_supply=[]
-      day.each {|s| cap_supply<<s.to_s.capitalize!}
+      supply.each {|s| cap_supply<<s.to_s.capitalize!}
       puts "  #{cap_day.join(" ")}: " + "#{cap_supply.join(", ")}"
     end
   end
