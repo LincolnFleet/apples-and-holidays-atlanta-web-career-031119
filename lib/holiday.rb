@@ -100,7 +100,7 @@ def all_supplies_in_holidays(holiday_hash)
     days.each do |day, supply|
       cap_day=day.to_s
       cap_day=[*cap_day]
-      if cap_day.include?"_"
+      if cap_day.include? "_"
         cap_day=cap_day.split("_")
       end
       cap_day.map {|d| d=d.to_s.capitalize!}
